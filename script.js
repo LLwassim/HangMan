@@ -1,5 +1,5 @@
 var rand = 0
-var word ' ';
+var word = ' ';
 var numWrong = 0;
 var numRight = 0;
 var phraseLength = 0;
@@ -22,18 +22,35 @@ function mp(){
 }
 
 function anime(){
-	rand = math.floor(math.random()*anime.length);
+	rand = Math.floor(Math.random()*anime.length);
 	word = anime[rand];
+	document.getElementById('singlePage').style.display = 'none';
+	document.getElementById('categoryName').innerHTML = 'Anime Shows Names';
+	hangman()
 }
 
 function songs(){
-	rand = math.floor(math.random()*songs.length);
+	rand = Math.floor(Math.random()*songs.length);
 	word = songs[rand];
+	document.getElementById('singlePage').style.display = 'none';
+	document.getElementById('categoryName').innerHTML = 'Songs and Artists(hint: "by"';
+	hangman()
 }
 
 function brands(){
-	rand = math.floor(math.random()*brands.length);
+	rand = Math.floor(Math.random()*brands.length);
 	word = brands[rand];
+	document.getElementById('singlePage').style.display = 'none';
+	document.getElementById('categoryName').innerHTML = 'All Company Brands';
+	hangman()
+}
+
+function challenge(){
+	rand = 
+Math.floor(Math.random()*challanges.length);
+word = 1;
+var letter = word.substring(0,1);
+document.getElementById('letter1').innerHTML = letter;
 }
 
 
