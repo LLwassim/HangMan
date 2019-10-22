@@ -3,6 +3,7 @@
 <head>
 	<title>LLWBL Hangman</title>
 	<script type="text/javascript" src="script.js"></script>
+	<link rel ="stylesheet" type="text/css" href='style.css'></style>
 </head>
 <body>
 
@@ -31,18 +32,66 @@
 				<div id='songs' onclick="songs()">Songs
 				</div>
 			<div id='category3'>
-				<div id ='hurricanes' onclick="hurricanes()">hurricanes
+			<div id='Brands' onclick="Brands()">
+					Brands
 				</div>
 			<div id='category4'>
-				<div id='Brands' onclick="Brands()">
-					Brands
+				<div id='APEMODE' onclick="APEMODE()">
+					APEMODE
 				</div>
 		</div>
 	</div>
 
+<div id='mp1' onclick="mp()">Multiplayer
+</div>
 
+<div id ='multiPage'>
+	<div id="wordInput">
+		<div id ='multiText'>
+			<p>type your word for the guesser and click submit</p>
+			<p>DISCLAIMER! the guesser should not be looking at screen</p>
+		</div>
+		<div id ='inputContainer'>
+			<textarea id="input" cols="40" rows="5" onkeyup="countchars('input' ,'charcount');"
+			onkeydown="countchars('input' ,'charcount');"
+			onmouseout="countchars('input' ,'charcount');"
+			></textarea>
+			<span id="restriction">Only special characters allowed: <span style="font-weight: 700;"> ? ! , . ' &ndash;</span></span>
+			<div id='charectercount'>
+			<p id='charcontain'>
+				<span id='charcount'>0</span>/100 characters
+			</p>
 
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: cursive;
+}
+body{
+    background: red;
+    background: -webkit-linear-gradient(red, white, red;
+    background: -o-linear-gradient(red, white, red);
+    background: -moz-linear-gradient(red, white, red);
+    background: linear-gradient(red, white, red);
+}
+a{
+    color: #b10000;
+    text-decoration: none;
+}
+    a:hover{
+        text-decoration: underline;
+    }
+    a:visited{
+        color: #b10000;
+    }
+body, html, #category, #category1, #category2, #phrases, #movies, #songs, #challenge, #introPage, #introText, #introText p, #sp, #mp, #sp1, #mp1, #multiPage, #singlePage #wordWrap, #wordWrap div, #restriction, #gamePage, #letterBank div, #challengeBank div, #videoPage{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
