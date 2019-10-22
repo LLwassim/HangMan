@@ -21,7 +21,20 @@ function mp(){
 	document.getElementById('singlePage').style.display = 'none';
 }
 
+function anime(){
+	rand = math.floor(math.random()*anime.length);
+	word = anime[rand];
+}
 
+function songs(){
+	rand = math.floor(math.random()*songs.length);
+	word = songs[rand];
+}
+
+function brands(){
+	rand = math.floor(math.random()*brands.length);
+	word = brands[rand];
+}
 
 
 
