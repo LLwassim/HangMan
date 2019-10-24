@@ -3,14 +3,14 @@ html{
     -ms-text-size-adjust: 100%;
     height: 100%;
     margin: 0;
-    font-family: cursive;
+    font-family: 'Architects Daughter', cursive;
 }
 body{
-    background: red;
-    background: -webkit-linear-gradient(red, white, red;
-    background: -o-linear-gradient(red, white, red);
-    background: -moz-linear-gradient(red, white, red);
-    background: linear-gradient(red, white, red);
+    background: #c1c1c1;
+    background: -webkit-linear-gradient(#c1c1c1, white, #c1c1c1);
+    background: -o-linear-gradient(#c1c1c1, white, #c1c1c1);
+    background: -moz-linear-gradient(#c1c1c1, white, #c1c1c1);
+    background: linear-gradient(#c1c1c1, white, #c1c1c1);
 }
 a{
     color: #b10000;
@@ -26,4 +26,268 @@ body, html, #category, #category1, #category2, #phrases, #movies, #songs, #chall
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+#introPage, #singlePage, #multiPage, #videoPage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#introPage{
+    display: block;
+    height: 650px;
+    width: 850px;
+}
+    #introText{
+        width: 850px;
+        height: 260px;
+        margin: 10px auto;
+    }
+    #introText p, #multiText p{
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto 20px auto;
+    }
+    #buttonContainer{
+        width: 700px;
+        height: 75px;
+        margin: 50px auto;
+    }
+    #sp, #mp, #sp1, #mp1{
+        font-size: 35px;
+        width: 250px;
+        height: 75px;
+        float: right;
+        line-height: 75px;
+        text-align: center;
+        color: white;
+        background-color: #00006c;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    #sp{
+        float: left;
+    }
+    #sp1{
+        margin: 69px 20px 0 0;
+    }
+    #mp1{
+        margin: 50px 20px 0 0;
+    }
+    #homeHangman, #hangman{
+        display: block;
+        margin: 50px auto 0 auto;
+        border: 1px solid black;
+    }
+#singlePage{
+    display: none;
+    height: 560px;
+    width: 845px;
+}
+    #singlePage p{
+        font-size: 40px;
+        margin: 0px auto 40px auto;
+        text-align: center;
+    }
+    #categoryHolder{
+        width: 100%;
+        height: 335px;
+    }    
+    #category{
+        width: 700px;
+        height: 335px;
+        margin: 0 auto;
+    }    
+    #category1, #category2{
+        float: left;
+        width: 700px;
+        height: 150px;
+    }
+    #category1{
+        margin-bottom: 30px;
+    }
+    #phrases, #movies, #songs, #challenge{
+        float: left;
+        width: 48%;
+        height: 100%;
+        font-size: 70px;
+        line-height: 150px;
+        text-align: center;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    #challenge, #movies{
+        float: right;
+    }
+    #phrases{
+        background: #000081;
+        background: -webkit-linear-gradient(left, #000081, white);
+        background: -o-linear-gradient(left, #000081, white);
+        background: -moz-linear-gradient(left, #000081, white);
+        background: linear-gradient(to right, #000081, white);
+    }
+    #movies{
+        background: #147b14;
+        background: -webkit-linear-gradient(left, white, #147b14);
+        background: -o-linear-gradient(right, white, #147b14);
+        background: -moz-linear-gradient(right, white, #147b14);
+        background: linear-gradient(to right, white, #147b14);
+    }
+    #songs{
+        background: #bc7a00;
+        background: -webkit-linear-gradient(left, #bc7a00, white);
+        background: -o-linear-gradient(left, #bc7a00, white);
+        background: -moz-linear-gradient(left, #bc7a00, white);
+        background: linear-gradient(to right, #bc7a00, white);
+    }
+    #challenge{
+        background: #b10000;
+        background: -webkit-linear-gradient(left, white, #b10000);
+        background: -o-linear-gradient(right, white, #b10000);
+        background: -moz-linear-gradient(right, white, #b10000);
+        background: linear-gradient(to right, white, #b10000);
+    }
+#multiPage{
+    display: none;
+    height: 490px;
+    width: 845px;
+}    
+    #wordInput{
+        width: 845px;
+        height: 350px;
+        margin: 0px auto;
+    }
+    #multiText p{
+        font-size: 29px;
+    }
+    #input{
+        font-family: sans-serif;
+        display: block;
+        margin: 0px auto;
+        padding: 10px;
+        font-size: 25px;
+    }
+    #restriction{
+        font-family: sans-serif;
+        float: right;
+        position: relative;
+        right: 175px;
+        bottom: 22px;
+        font-size: 15px;
+    }
+    #characterCount{
+        width: 580px;
+        height: 35px;
+        margin: 21px auto 0 auto;
+        font-size: 25px;
+    }
+    #charContain{
+        margin: 0;
+        float: left;
+    }
+    #submit{
+        font-size: 35px;
+        width: 200px;
+        height: 35px;
+        float: right;
+        line-height: 35px;
+        text-align: center;
+        color: white;
+        background-color: #00b100;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+#gamePage{
+    display: none;
+    text-align: center;
+}
+    #categoryName{
+        width: 100%;
+        margin: 20px auto 0px auto;
+        font-size: 75px;
+    }    
+    #wordWrap{
+        display: inline-block;
+        width: 830px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    #letter1, #letter2, #letter3, #letter4, #letter5, #letter6, #letter7, #letter8, #letter9, #letter10, #letter11, #letter12, #letter13, #letter14, #letter15, #letter16, #letter17, #letter18, #letter19, #letter20, #letter21, #letter22, #letter23, #letter24, #letter25, #letter26, #letter27, #letter28, #letter29, #letter30, #letter31, #letter32, #letter33, #letter34, #letter35, #letter36, #letter37, #letter38, #letter39, #letter40, #letter41, #letter42, #letter43, #letter44, #letter45, #letter46, #letter47, #letter48, #letter49, #letter50, #letter51, #letter52, #letter53, #letter54, #letter55, #letter56, #letter57, #letter58, #letter59, #letter60, #letter61, #letter62, #letter63, #letter64, #letter65, #letter66, #letter67, #letter68, #letter69, #letter70, #letter71, #letter72, #letter73, #letter74, #letter75, #letter76, #letter77, #letter78, #letter79, #letter80, #letter81, #letter82, #letter83, #letter84, #letter85, #letter86, #letter87, #letter88, #letter89, #letter90, #letter91, #letter92, #letter93, #letter94, #letter95, #letter96, #letter97, #letter98, #letter99, #letter100{
+        font-family: 'Gloria Hallelujah', cursive;
+        width: 50px;
+        height: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
+        display: none;
+        float: left;
+        width: 50px;
+        height: 60px;
+        margin-right: 5px;
+    }
+    #letterBank, #challengeBank{
+        width: 780px;
+        height: 125px;
+        margin: 20px auto;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        -webkit-user-select: none;        
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    #letterBank div, #challengeBank div{
+        float: left;
+        width: 50px;
+        height: 58px;
+        margin: 0px 10px 10px 0px;
+        cursor: pointer;
+        background-color: #adadad;
+    }
+    #letterBank div:hover, #challengeBank div:hover{
+        background-color: #797979;
+    }
+    #letterBank div:active, #challengeBank div:active{
+        background-color: gray;
+        width: 50px;
+        font-size: 45px;
+        padding-top: 3px;
+    }
+    #results{
+        margin-top: 5px;
+        height: 70px;
+        visibility: hidden;
+        line-height: 70px;
+    }
+    #again, #home, #home1{
+        display: none;
+        width: 50%;
+        height: 65px;
+        margin: 0px auto 20px auto;
+        font-size: 35px;
+        line-height: 65px;
+        text-align: center;
+        color: white;
+        background-color: #00006c;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    #home{
+        margin-top: 0px;
+    }
+    #home1{
+        margin-top: 32px;
+    }
+    #vidSent{
+        display: none;
+        margin-bottom: 100px;
+        font-size: 30px;
+    }
+#challengeGame{
+    text-align: center;
 }

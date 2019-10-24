@@ -2,8 +2,14 @@
 <html>
 <head>
 	<title>LLWBL Hangman</title>
-	<script type="text/javascript" src="script.js"></script>
-	<link rel ="stylesheet" type="text/css" href='style.css'></style>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GA SEI33 Hangman</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="script.js"></script>
+    <script>window.onload = draw;</script>
 </head>
 <body>
 
@@ -28,17 +34,22 @@
 			<div id=' category1'>
 				<div id='Anime' onclick='Anime()'> Anime
 				</div>
+			</div>
 			<div id='category2'>
 				<div id='songs' onclick="songs()">Songs
 				</div>
+			</div>
 			<div id='category3'>
-			<div id='Brands' onclick="Brands()">
+				<div id='Brands' onclick="brand()">
 					Brands
 				</div>
+			</div>
 			<div id='category4'>
 				<div id='APEMODE' onclick="APEMODE()">
 					APEMODE
 				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 
@@ -51,11 +62,8 @@
 			<p>type your word for the guesser and click submit</p>
 			<p>DISCLAIMER! the guesser should not be looking at screen</p>
 		</div>
-		<div id ='inputContainer'>
-			<textarea id="input" cols="40" rows="5" onkeyup="countchars('input' ,'charcount');"
-			onkeydown="countchars('input' ,'charcount');"
-			onmouseout="countchars('input' ,'charcount');"
-			></textarea>
+		    <div id="inputContainer">
+            <textarea id="input" cols="40" rows="5" onkeyup = "countChars('input','charcount');" onkeydown = "countChars('input','charcount');" onmouseout = "countChars('input','charcount');"></textarea>
 			<span id="restriction">Only special characters allowed: <span style="font-weight: 700;"> ? ! , . ' &ndash;</span></span>
 			<div id='charectercount'>
 			<p id='charcontain'>
