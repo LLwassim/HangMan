@@ -8,8 +8,7 @@
     <title>GA SEI33 Hangman</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="script.js"></script>
-    <script>window.onload = draw;</script>
+    <script>window.onload = "draw";</script>
 </head>
 <body>
 
@@ -26,35 +25,34 @@
 	height="300px">
 	</canvas>
 	</div>
-
+</div>
 <div id="singlePage">
 	<p>Genre</p>
 	<div id='categoryHolder'>
 		<div id ='category'>
 			<div id=' category1'>
-				<div id='Anime' onclick='Anime()'> Anime
+				<div id='Anime' onclick='anime()'> Anime
+				</div>
+				<div id='songs'>Songs
 				</div>
 			</div>
 			<div id='category2'>
-				<div id='songs' onclick="songs()">Songs
-				</div>
-			</div>
-			<div id='category3'>
-				<div id='Brands' onclick="brand()">
+				<div id='Brands' onclick="brands()">
 					Brands
 				</div>
-			</div>
-			<div id='category4'>
-				<div id='APEMODE' onclick="APEMODE()">
+				<div id='APEMODE' onclick="challenge()">
 					APEMODE
 				</div>
 			</div>
 		</div>
+        <div id='mp1' onclick="mp()">Multi
+</div>
 		</div>
 	</div>
-
-<div id='mp1' onclick="mp()">Multiplayer
 </div>
+
+
+
 
 <div id ='multiPage'>
 	<div id="wordInput">
@@ -74,6 +72,7 @@
 			<div id ='sp1' onclick="sp()">Single player</div>
 		</div>
 	</div>
+</div>
 	<div id="gamePage">
         <p id="categoryName"></p>
         <div id="wordWrap">
@@ -390,7 +389,7 @@
         <div id="again" onClick="reset()">Play again!</div>
         <div id="home" onClick="window.location.reload()">Main menu</div>
 
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
 

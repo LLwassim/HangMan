@@ -28,14 +28,22 @@ function anime(){
 	document.getElementById('categoryName').innerHTML = 'Anime Shows Names';
 	hangman()
 }
-
-function songs(){
-	rand = Math.floor(Math.random()*songs.length);
-	word = songs[rand];
-	document.getElementById('singlePage').style.display = 'none';
-	document.getElementById('categoryName').innerHTML = 'Songs and Artists(hint: "by"';
-	hangman()
-}
+const songsFunc = document.querySelector('#songs')
+console.log(songsFunc);
+songsFunc.addEventListener('click',(e) => {
+     rand = Math.floor(Math.random()*songs.length);
+     word = songs[rand];
+    document.getElementById('singlePage').style.display = 'none';
+    document.getElementById('categoryName').innerHTML = 'Songs and Artists(hint: "by"';
+    hangman()
+})
+// function songs(){
+// 	rand = Math.floor(Math.random()*songs.length);
+// 	word = songs[rand];
+// 	document.getElementById('singlePage').style.display = 'none';
+// 	document.getElementById('categoryName').innerHTML = 'Songs and Artists(hint: "by"';
+// 	hangman()
+// }
 
 function brands(){
 	rand = Math.floor(Math.random()*brands.length);
@@ -1501,12 +1509,6 @@ function hang(){
     else{
         challenge();
     }
-}
-
-function video(){
-    document.getElementById('gamePage').style.display = "none";
-    document.getElementById('videoPage').style.display = "block";
-    document.getElementById('home1').style.display = "block";
 }
 
 
