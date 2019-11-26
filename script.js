@@ -17,8 +17,8 @@ function sp(){
 
 function mp(){
 	document.getElementById('introPage').style.display = 'none';
-	document.getElementById('multiPage').style.display = 'none';
-	document.getElementById('singlePage').style.display = 'block';
+	document.getElementById('singlePage').style.display = 'none';
+	document.getElementById('multiPage').style.display = 'block';
 }
 
 function anime(){
@@ -47,7 +47,7 @@ function brand(){
 
 function challenge(){
 rand = Math.floor(Math.random()*challenges.length);
-word = rand[challenges];
+word = challenges[rand];
 numChar = 1;
 var letter = word.substring(0,1);
 document.getElementById('letter1').innerHTML = letter;
